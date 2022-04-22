@@ -28,12 +28,8 @@ export class Coctail {
             row.appendChild(div)
         }
     }
- export   class OneCoctail{
-        idDrink:string;
-        strDrink:string;
-        strCategory:string;
-        strAlcoholic:string;
-        strDrinkThumb:string;
+ export   class OneCoctail extends Coctail{
+       
     
         strInstructions:string;
         strGlass:string;
@@ -45,11 +41,7 @@ export class Coctail {
     
         constructor(idDrink: string,strDrink: string,strCategory: string,strAlcoholic: string,strDrinkThumb: string,strInstructions: string, strGlass: string,strIngredient1: string,strIngredient2: string,strIngredient3: string,strIngredient4: string,strIngredient5: string){
     
-        this.idDrink = idDrink;
-        this.strDrink = strDrink;
-        this.strCategory = strCategory;
-        this.strAlcoholic = strAlcoholic;
-        this.strDrinkThumb = strDrinkThumb;
+       super(idDrink,strDrink,strCategory,strAlcoholic,strDrinkThumb)
         
         this.strInstructions = strInstructions;    
         this.strGlass=strGlass

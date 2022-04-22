@@ -22,13 +22,9 @@ export class Coctail {
         row.appendChild(div);
     }
 }
-export class OneCoctail {
+export class OneCoctail extends Coctail {
     constructor(idDrink, strDrink, strCategory, strAlcoholic, strDrinkThumb, strInstructions, strGlass, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5) {
-        this.idDrink = idDrink;
-        this.strDrink = strDrink;
-        this.strCategory = strCategory;
-        this.strAlcoholic = strAlcoholic;
-        this.strDrinkThumb = strDrinkThumb;
+        super(idDrink, strDrink, strCategory, strAlcoholic, strDrinkThumb);
         this.strInstructions = strInstructions;
         this.strGlass = strGlass;
         this.strIngredient1 = strIngredient1 || "";
